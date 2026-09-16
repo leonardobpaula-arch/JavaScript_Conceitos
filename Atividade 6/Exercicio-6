@@ -1,0 +1,13 @@
+const entrada = require('readline-sync');
+
+let total = 0;
+
+for (let hora = 1; hora <=5; hora++) {
+    const producao = entrada.questionInt("Digite a producao da hora" + hora + "!")
+    total += producao;
+};
+const media = total / 5;
+
+console.log("\n=== Relatorio de producao");
+console.log(`Total produzido: ${total}`);
+console.log(`Media de producao: ${media}`);
