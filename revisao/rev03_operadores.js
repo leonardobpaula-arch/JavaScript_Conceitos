@@ -6,3 +6,6 @@ for(let operador = 0; operador < 5; operador++){
     const nome = entrada.question(`Digite o nome do operador ${operador + 1}: `);
     operadores.push(nome);
 }
+for(let i = 0; i < operadores.length; i++){
+    console.log(`${i+1} - ${operadores[i]}`);
+};
