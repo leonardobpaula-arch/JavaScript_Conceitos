@@ -4,7 +4,7 @@ const materiais = [];
 
 for(let i = 0; i < 4; i++){
     const material = {
-        nome: entrada.question("Digite o nome do material: "),
+        nome: entrada.question(`Digite o nome do [i+1]o material: `),
         quantidade: entrada.questionInt("Digite a quantidade: "),
         estoqueMinimo: entrada.questionInt("Digite o estoque minimo: "),
     }
@@ -24,6 +24,6 @@ for(let i = 0; i < materiais.length; i++){
     console.log(`Material: ${material.nome}`);
     console.log(`Quantidade: ${material.quantidade}`);
     console.log(`Estoque minimo: ${material.estoqueMinimo}`);
-    console.log(`situacao: ${situaocao}`);
+    console.log(`situacao: ${situacao}`);
     console.log("-".repeat(20));
 };
